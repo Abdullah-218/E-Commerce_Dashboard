@@ -1,0 +1,30 @@
+For backend we have :
+NodeJS 
+Express
+Nodemon
+Mongoose
+
+Commands to setup for backend (inside vscode terminal)
+1. npm init
+2. npm i express 
+3. npm install mongoose
+4. npm i nodemon
+5. npm install -g nodemon
+6. nodemon - to start the node file live 
+
+
+For Frontend we have :
+React
+
+Commands to setup for frontend (inside project folder terminal)
+1. npx create-react-app frontend (i.e frontend is the folder name)
+2. npm start - to start the react app
+3. npm i react-router-dom
+
+
+For database we have :
+MongoDB
+
+Commands to setup for MongoDB
+1. install the setup 
+2. mongo in cmd to check
