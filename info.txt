@@ -25,6 +25,6 @@ Commands to setup for frontend (inside project folder terminal)
 For database we have :
 MongoDB
 
-Commands to setup for MongoDB
+Commands to setup for MongoDB :
 1. install the setup 
 2. mongo in cmd to check
