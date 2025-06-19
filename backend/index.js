@@ -1,8 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-//const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 require("./db/config");
 const Users = require("./db/Users");
+const Product = require("./db/Product")
 const app = express();
 
 app.use(express.json());
@@ -15,15 +16,6 @@ app.post("/register", async (req, resp) => {
   delete result.password; // To remove password when registering 
   resp.send(result);
 });
-
-/* const connectDB = async () => {
-    mongoose.connect('mongodb://localhost:27017/e-comm');
-    const productSchema = new mongoose.Schema({});
-    const product = mongoose.model('product',productSchema);
-    const data = await product.find();
-    console.warn(data); 
-}
-connectDB(); */
 
 app.post("/login", async (req, resp) => {
   console.log(req.body);
@@ -39,6 +31,21 @@ app.post("/login", async (req, resp) => {
   }
 
 });
+
+app.post("/addProduct",async (req,resp)=>{
+  let product = new Product(req.body);
+  let result = await product.save();
+  resp.send(result);
+})
+
+app.get("/products", async (req,resp)=>{
+  let products = await Product.find();
+  if(products.length>0){
+    resp.send(products);
+  }else{
+    resp.send({result:"No products Found !"});
+  }
+})
 
 app.get("/", (req, resp) => {
   resp.send("App is running...");

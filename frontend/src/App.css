@@ -23,7 +23,7 @@
     background-color: skyblue;
 }
 
-.registerBox{
+.registerBox , .product{
   margin-left: 30%;
 }
 .login{
@@ -48,6 +48,23 @@
   cursor: pointer;
 }
 
+.nav-right{
+  text-align:  right;
+}
+
+.logo{
+  width: 45px;
+  float: left;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.invalidSpan{
+  color: red;
+  margin-top: -20px;
+  display: block;
+  margin-left: 40px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

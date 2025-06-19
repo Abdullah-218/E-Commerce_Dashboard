@@ -38,25 +38,29 @@ const SignUp = () => {
       <input
         className="inputBox"
         type="text"
+        placeholder="Enter Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Enter Name"
       />
       <input
         className="inputBox"
         type="text"
+        placeholder="Enter Email ID"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter Email ID"
+
       />
       <input
         className="inputBox"
         type="password"
+        placeholder="Enter Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        placeholder="Enter Password"
       />
-      <button onClick={collectData} className="appButton" type="button">
+      <button 
+        onClick={collectData} 
+        className="appButton" 
+        type="button">
         {" "}
         Sign Up{" "}
       </button>

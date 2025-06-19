@@ -39,17 +39,20 @@ const Login = () => {
                 type="text"
                 className="inputBox"
                 placeholder="Enter Email"
-                onChange={(e) => setEmail(e.target.value)}
                 value={email}
+                onChange={(e) => setEmail(e.target.value)}
             />
             <input
                 type="password"
                 className="inputBox"
                 placeholder="Enter Password"
-                onChange={(e) => setPassword(e.target.value)}
                 value={password}
+                onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={handleLogin} className="appButton" type="button">
+            <button 
+               onClick={handleLogin} 
+               className="appButton" 
+               type="button">
                 Login
             </button>
         </div>
