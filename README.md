@@ -2,4 +2,4 @@
 
 # Basics of MERN learning by doing projects
 
-# Will update aftyer completing this Project
+# Will update after completing this Project
