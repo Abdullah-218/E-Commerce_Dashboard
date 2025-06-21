@@ -27,4 +27,4 @@ MongoDB
 
 Commands to setup for MongoDB
 1. install the setup 
-2. mongo in cmd to check
+2. mongo in cmd to check...
