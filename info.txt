@@ -35,3 +35,5 @@ JWT - jsonwebtoken
 commands to setup for JWT
 1. npm i jsonwebtoken
 2. Add verifyToken function from index.html to all the routes and handle that function by adding the header authorization on all the fetch function 
+
+When i tried to commit from vscode the green dot is not updating so i need to learn the diff b/w this 
