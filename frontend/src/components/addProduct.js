@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
 
@@ -7,6 +8,7 @@ const AddProduct = () => {
     const [category, setCategory] = React.useState('');
     const [company, setCompany] = React.useState('');
     const [error,setError] = React.useState(false);
+    const navigate = useNavigate();
 
     const addProduct = async () => {
 
@@ -23,11 +25,13 @@ const AddProduct = () => {
             method: "POST",
             body: JSON.stringify({name,price,category,company}),
             headers: {
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                authorization : `bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
         });
         result = await result.json();
         console.warn(result);
+        navigate("/");
     }
 
 
