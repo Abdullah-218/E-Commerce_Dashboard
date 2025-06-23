@@ -120,9 +120,10 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## 👤 Author
 
-** Abdullah **
+**Abdullah X Dev**
 
-- GitHub: [@Abdullah-218]([https://github.com/abdullahmax](https://github.com/Abdullah-218))
-- LinkedIn: [Your LinkedIn Name](www.linkedin.com/in/abdullahxdev)
+- GitHub: https://github.com/Abdullah-218
+- LinkedIn: www.linkedin.com/in/abdullahxdev
+
 
 > Built this as a learning and portfolio project. Contributions are welcome!
