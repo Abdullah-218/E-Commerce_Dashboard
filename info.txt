@@ -38,4 +38,4 @@ commands to setup for JWT
 
 When i tried to commit from vscode the green dot is not updating so i need to learn the diff b/w this 
 
-Adding this line to check again 
+Learned what to do for updating from vscode 
